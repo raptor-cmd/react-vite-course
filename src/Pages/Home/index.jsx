@@ -10,7 +10,7 @@ function Home() {
   useEffect(() => {
     fetch('https://api.escuelajs.co/api/v1/products')
     .then(response => response.json())
-    .then(data => setItems(data))
+    .then(data => {setItems(data)})
   }, [])
 
   return (
